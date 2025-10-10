@@ -1,0 +1,262 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-size: 18px;
+  line-height: 1.15;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  font-size: 50px;
+  line-height: 1;
+  padding: 50px 0;
+  text-align: center;
+}
+
+h2{
+  color: #00274C;
+  font-size: 32px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+nav li{
+  display:inline;
+  padding-right:20px;
+  line-height: 2.1;
+}
+
+nav a{
+  color: #00274C;
+  font-weight: bold;
+  text-decoration: none; 
+}
+
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+nav{
+  background-color: #FFCB05;
+  padding: 25px 15px; 
+  text-align: center;
+}
+
+footer{
+  background-color: #ddd;
+  color: black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto; /* Removes scroll animation */
+  }
+
+  .skip a{
+    -webkit-transition: none; /* sets to default setting */
+    transition: none;        /* sets to default setting */
+   }
+
+  /*Turn off parallax*/
+  header{
+    background-attachment: initial;
+  }
+}
+
+
+/*Your Code Here*/
+
+/*Write selector/rule property to add your border when
+links in the navigation are in the hover or focus state.*/
+nav a:hover {
+    border-bottom: 2px solid #00274C;
+}
+
+nav a:focus {
+    border: 2px dashed #00274C;
+}
+
+/*Write selector/rule property to position the default position for the skip class element*/
+.skip a{
+    position: absolute;
+    top: -65px;
+}
+
+/*Write selector/rule property to position the skip class element when it is in focus*/
+.skip a:focus {
+    position: absolute;
+    top: 25px;
+}
+
+/*Write selector/rule property to style all elements when in focus*/
+*:focus {
+    border: 5px dashed #00274C;
+} 
+
+/*Write selector/rule property to style the container */
+.container {
+     display: grid;
+     grid-template-columns: repeat(5, 1fr);
+     /* grid-template-rows: auto auto; */
+     grid-gap: 60px;
+     align-items: center;
+     justify-items: center;
+     max-height: 100%;
+     max-width: 100%;
+}
+
+.header, .intro, .why, .start, .resource, .text_and_image {
+     grid-column: 1 / -1;
+}
+
+/* HEADER */
+.header {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  justify-items: center;
+  background-color: #00274C;
+}
+
+.header .header_img, .header_title, .header_logo, .header_background{
+  grid-column: 1 / -1;
+  grid-row: 1;
+}
+
+.header_title {
+  color: white;
+
+  /* AI Gemini -> make the title come out */
+  z-index: 2; 
+}
+
+.header_logo {
+  width: 35px;
+  height: auto;
+  align-self: start;
+  justify-self: end;
+  padding-right: 15px;
+  padding-top: 15px;
+
+  /* AI Gemini -> make the title come out */
+  z-index: 2; 
+}
+
+.header_img{
+  z-index: 1; 
+  filter: brightness(40%);
+}  
+
+/* Why Section */
+.why li {
+    /* padding-right: 10px;
+    padding-left: 10px; */
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* Resouce Section */
+.resource-text-block {
+  border: 10px solid #00274C;
+  background-color: #FFCB05;
+
+  padding: 30px 30px 15px 30px;
+  text-align: center;
+}
+
+.resource-text-block li{
+    text-align: left;
+}
+
+/* Text and Image Section -> For List in resume.html */
+.text_and_image li{
+  /* padding-right: 10px;
+  padding-left: 10px; */
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+/* All Sections */
+.text-center{
+    text-align: center;
+    /* padding-bottom: 5px; */
+}
+
+.relevant_img {
+     grid-column: 1 / -1;
+     /* max-height: 250px; */
+     /* object-fit: cover; */
+     /* width: 100%; */
+     height: 100%;
+}
+
+.bottom_space {
+    margin-bottom: 60px;
+}
+
+.container img {
+     object-fit: cover;
+     width: 100%;
+     height: 100%;
+}
+
+.container iframe {
+     object-fit: cover;
+     width: 100%;
+     /* height: 100%; */
+}
+
+footer img{
+  width: 60px;
+  height: auto;
+  padding-bottom: 5px;
+}
+
+h1 {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+h2 {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+p {
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 15px;
+}
+
+body{
+  font-family: 'Nunito Sans', Arial, sans-serif;
+}
+
+ul{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+li {
+  padding-bottom: 15px;
+}
+
+ol{
+  padding-right: 15px;
+  padding-left: 15px;
+}
