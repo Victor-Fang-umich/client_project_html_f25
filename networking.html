@@ -3,51 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MSI Career Development Resource Hub</title>
-</head>
-<body>
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
 
+    <title>UMSI Networking and Connection</title>
+</head>
+
+<body>
+    <div class="skip"><a href="#main_content">Skip to Main Content</a></div>
     <header>
-  <a href = "#main-content">Skip to Main Content</a>
-        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
         <nav>
             <ul>
                 <li><a href = "index.html">Home</a></li>
+                <li><a href = "networking.html">Networking</a></li>
                 <li><a href = "resume.html">Resumes</a></li>
-                <li><a href = "networking.html">Networking & Connections</a></li>
-                <li><a href = "career.html">Career Exploration</a></li>
+                <li><a href = "career.html">Career</a></li>
             </ul>
         </nav>
-    <h1>Networking & Connections</h1>
 
     </header>
 
-    <main id = "main-content">
+    <main class="container" id = "main_content">
 
-    <section>
-      <h2>Build Your Connection at UMSI</h2>
-      <p>
-        UMSI provides a community for people to connect with each other. At UMSI, you gain the opportunity to  meet  people with different backgrounds. The UMSI community also allows you to engage with UMSI alumni.
-      </p>
+      <!-- Part 1: Header -->
+       <div class = "header">
+       
+         <div class = "header_img">   
+            <img width="560" height="315" src="images/network_header.jpg" alt="People are connecting with each other in an event.">
+         </div>
 
-      <!-- The following image is from Adobe Stock. -->
-      <img width="560" height="315" src="images/connect.jpeg" alt="Connect">
-    </section>
+         <div class = "header_logo">
+            <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+         </div>
 
-    <section>
+         <div class = "header_title">
+            <h1 class = "title">Networking & Connections</h1>
+        </div>
+  
+       </div>
+
+      <!-- Part 2: Intro -->
+      <div class = "intro">
+       <div>
+         <h2>Build Your Connection at UMSI</h2>
+         <p>
+            UMSI provides a community for people to connect with each other. At UMSI, you gain the opportunity to  meet  people with different backgrounds. The UMSI community also allows you to engage with UMSI alumni.
+         </p>
+       </div>
+
+       <div class = "relevant_img">
+          <!-- The following image is from Adobe Stock. -->
+          <img width="560" height="315" src="images/connect.jpeg" alt="A netwokring image">
+       </div>
+      </div>
+
+    <!-- Part 3: Why -->
+    <div class = "why">
       <h2>Why Connect?</h2>
+      
+      <div class = "why-text-block">
+       <ul>
+          <li><strong>Increase Job Opportunities:</strong> Enhance your chance of landing a job through referrals.</li>
+          <li><strong>Gain Mentorship:</strong> Receive advice and support from UMSI alumni.</li>
+          <li><strong>Acquire Professional Skills:</strong> Develop more skills from people with different beackgrounds.</li>
+          <li><strong>Build Relationships:</strong> Make friends with other people.</li>
+       </ul>
+      </div>
+    </div>
 
-      <ul>
-        <li><strong>Increase Job Opportunities:</strong> Enhance your chance of landing a job through referrals.</li>
-        <li><strong>Gain Mentorship:</strong> Receive advice and support from UMSI alumni.</li>
-        <li><strong>Acquire Professional Skills:</strong> Develop more skills from people with different beackgrounds.</li>
-        <li><strong>Build Relationships:</strong> Make friends with other people.</li>
-      </ul>
-    </section>
-
-    <section>  
-      <div>
-        <h2>Relevant Resources</h2>
+    <!-- Part 5: Resource List -->
+    <div class = "resource">
+      <div class = "resource-text-block">
+        <h2 class = "text-block-title">Relevant Resources</h2>
         <ul>
           <li><a href="https://careercenter.umich.edu/content/networking-resources" target="_blank">Networking Resources</a>
             <br>
@@ -63,20 +90,34 @@
           </li>
         </ul>
       </div>
-    </section>
 
-    <section>  
-      <div>
-        <h3>Want to Get Updates on Upcoming Events?</h3>
-            <a href="https://www.si.umich.edu/about-umsi/events/subscribe-umsi-event-news-weekly-summary" target="_blank">Subscribe to UMSI event news</a>
-            to find out about upcoming events!  
+    </div>
+
+    <!-- Part 6: Subscribe -->
+    <div class = "text_and_image">
+
+      <h2>Want to Get Updates on Upcoming Events?</h2>
+      <p class = "text-center">
+        <a href="https://www.si.umich.edu/about-umsi/events/subscribe-umsi-event-news-weekly-summary" target="_blank">Subscribe to UMSI event news</a>
+        to find out about upcoming events! 
+      </p> 
+
+      <div class = "relevant_img">
+        <img width="560" height="315" src="images/network_why.jpg" alt="People are signing up for events.">
       </div>
-    </section>
-   
-    </main>
 
+      <div class = "bottom_space"></div>
+
+    </div>
+       
+        <!-- Content taken & modified from UMGPT with the prompt, "Write me a webpage of intro content to help meet the following requirements - this is for the home page": and then pasted in the client objectives & project requirements"
+        UMGPT. (2025). UMGPT ( GPT-4.1 August 25th version) [Large language model]. -->
+    </main>
+    
     <footer>
+        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
         <p>University of Michigan School of Information | <a href="https://umich.instructure.com/courses/137916">UMSI Career Development Office </a></p>
-        </footer>
+    </footer>
+
 </body>
 </html>
