@@ -208,10 +208,11 @@ nav a:focus {
      /* height: 100%; */
 }
 
+/* The UMSI logo in the footer */
 footer img{
   width: 60px;
   height: auto;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 
 h1 {
