@@ -32,6 +32,10 @@ nav a{
   text-decoration: none; 
 }
 
+nav a.active{
+  border-bottom: 2px solid #00274C;
+}
+
 nav{
   background-color: #FFCB05;
   padding-top: 25px; 
