@@ -81,7 +81,7 @@ nav a:focus {
      grid-template-columns: repeat(5, 1fr);
      grid-gap: 60px;
      align-items: center;
-     justify-items: start / end;
+     /* justify-items: center; */
      max-height: 100%;
      max-width: 100%;
 }
