@@ -28,12 +28,13 @@ nav li{
 
 nav a{
   color: #00274C;
-  font-weight: bold;
+  font-weight: medium;
   text-decoration: none; 
 }
 
 nav a.active{
   border-bottom: 2px solid #00274C;
+    font-weight: bold;
 }
 
 nav{
