@@ -84,6 +84,22 @@ nav a:focus {
     border: 5px dashed #00274C;
 } 
 
+main a{  
+  font-weight: bold;
+  /* text-decoration: none;  */
+}
+
+main a:visited{  
+    color: #0000ee;
+}
+
+main a:hover{  
+    color: #00274C;
+    /* border-bottom: 1.5px solid #00274C; */
+    /* font-weight: bold; */
+}
+
+
 .container {
      display: grid;
      grid-template-columns: repeat(5, 1fr);
@@ -336,12 +352,22 @@ footer .first_line{
 
 }
 
-.copyright{
+footer .copyright{
   color: #454545;
   border-top: 1px solid darkgray;
   padding-top: 50px;
 
   width: 95%;
+}
+
+footer a:visited{  
+    color: #0000ee;
+}
+
+footer a:hover{  
+    color: #00274C;
+    /* border-bottom: 1.5px solid #00274C; */
+    /* font-weight: bold; */
 }
 /* END - Footer Section */
 
