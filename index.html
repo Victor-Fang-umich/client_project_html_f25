@@ -12,19 +12,26 @@
 <body>
     <div class="skip"><a href="#main_content">Skip to Main Content</a></div>
     <header>
-        <nav>
+        <nav class = "nav_container">
+            <div class = "header_logo">
+              <a href="index.html">
+              <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+              </a>
+            </div>
+            <!-- <a href="index.html"> -->
+            <!-- <div class = "logo_background"></div> -->
+            <!-- </a> -->
             <ul>
                 <li><a href = "index.html" class = "active">Home</a></li>
                 <li><a href = "networking.html">Networking</a></li>
                 <li><a href = "resume.html">Resumes</a></li>
-                <li><a href = "career.html">Career</a></li>
+                <li class = "last_option"><a href = "career.html">Career</a></li>
             </ul>
         </nav>
 
     </header>
 
     <main class="container" id = "main_content">
-
       <!-- Part 1: Header -->
        <div class = "header">
        
@@ -33,7 +40,7 @@
          </div>
 
          <div class = "header_logo">
-            <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+            <img src="images/UMSI_trans.png" alt="UMSI Logo">
          </div>
 
          <div class = "header_title">
@@ -117,7 +124,7 @@
     </div>
 
     <!-- Part 6: Organization -->
-    <div class = "text_and_image">
+    <div class = "text_and_image last_section">
 
       <h2>Connect with the UMSI Career Development Office</h2>
       <p>
@@ -135,10 +142,25 @@
         UMGPT. (2025). UMGPT ( GPT-4.1 August 25th version) [Large language model]. -->
     </main>
     
-    <footer>
-        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
-        <p>University of Michigan School of Information | <a href="https://umich.instructure.com/courses/137916">UMSI Career Development Office </a></p>
+    <footer class = "footer_container">
+        <img src="images/logo_trans.png" alt="UMSI Logo">
+        <p class = "first_line">University of Michigan School of Information <br> <a href="https://umich.instructure.com/courses/137916">UMSI Career Development Office </a></p>
+        <p class = "address"> 
+            School of Information 
+            <br>
+            University of Michigan
+            <br>
+            2200 Hayward Street
+            <br>
+            Ann Arbor, MI 48109
+            <br>
+        </p>
+        <p class = "copyright">© Copyrights <span id="year"></span> by CodexWorld. All rights reserved.</p>
     </footer>
+
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
 
 </body>
 </html>

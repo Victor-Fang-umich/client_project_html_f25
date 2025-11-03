@@ -27,36 +27,44 @@ nav li{
 }
 
 nav a{
-  color: #00274C;
+  color: white;
   font-weight: medium;
   text-decoration: none; 
 }
 
 nav a.active{
-  border-bottom: 2px solid #00274C;
-    font-weight: bold;
+  color: white;
+  padding-bottom: 3px;
+  border-bottom: 2px solid #FFCB05;
+  font-weight: bold;
 }
 
 nav{
-  background-color: #FFCB05;
-  padding-top: 25px; 
+  background-color: #00274C;
+  padding-top: 30px; 
   padding-bottom: 25px; 
   padding-left: 25px; 
   /* padding-right: 25px;  */
   text-align: center;
 }
 
+nav .header_logo{
+  display: none;
+}
+
 nav a:hover {
-    border-bottom: 2px solid #00274C;
+    border-bottom: 2px solid white;
+    padding-bottom: 3px;
 }
 
 nav a:focus {
-    border: 2px dashed #00274C;
+    border: 3px dashed white;
+    padding: 2px;
 }
 
 .skip a{
-    position: absolute;
-    top: -65px;
+  position: absolute;
+  top: -65px;
 
   /* From Starter Code */
   background: white;
@@ -64,7 +72,7 @@ nav a:focus {
   padding: 6px;
   -webkit-transition: top 1s ease-out;
   transition: top 1s ease-out;
-  z-index: 1;
+  z-index: 3;
 }
 
 .skip a:focus {
@@ -116,7 +124,7 @@ nav a:focus {
   z-index: 2; 
 }
 
-.header_logo {
+.header .header_logo {
   width: 35px;
   height: auto;
   align-self: start;
@@ -136,6 +144,20 @@ nav a:focus {
   z-index: 1; 
   filter: brightness(40%);
 }  
+
+/* The next 2 sections help enlarge the header image
+    while keeping the max height 750px.
+  This ensures that the header image will not cover 
+    the whole screen. */
+.header_img{
+  max-height: 750px;
+  width: 100%;
+}
+
+.header img{
+  max-height: 750px;
+  background-size: contain;
+}
 
 
 /* Why Section */
@@ -204,14 +226,14 @@ nav a:focus {
 }
 
 .container iframe {
-     object-fit: cover;
-     width: 100%;
-     /* height: 100%; */
+    object-fit: cover;
+    width: 100%;
+    /* height: 100%; */
 }
 
 /* The UMSI logo in the footer */
 footer img{
-  width: 60px;
+  width: 200px;
   height: auto;
   padding-bottom: 10px;
 }
@@ -279,10 +301,268 @@ ol{
     margin-bottom: 60px;
 }
 
+/* Footer Section */
 footer{
-  background-color: #ddd;
+  background-color: #f2f2f2;
   color: black;
-  padding-top: 30px;
+  padding-top: 60px;
   padding-bottom: 30px;
   text-align: center;
+}
+
+.footer_container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+    align-items: center;
+    justify-items: center;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+footer img, p{
+  grid-column: 1 / -1;
+  padding-bottom: 20px;
+}
+
+footer .address{
+  text-align: left;
+    line-height: 150%;
+}
+
+footer .first_line{
+  font-weight: bold;
+  line-height: 150%;
+
+}
+
+.copyright{
+  color: #454545;
+  border-top: 1px solid darkgray;
+  padding-top: 50px;
+
+  width: 95%;
+}
+/* END - Footer Section */
+
+
+/* Error Page */
+.error{
+ grid-column: 1 / -1;
+ text-align: center;
+}
+
+.button a,.button  a:visited{  
+  color: white;
+  background-color: #00274C;
+  
+  padding: 15px 60px;
+  border-radius: 10px; 
+  
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.button a:hover{  
+  color: #FFCB05;
+}
+
+.button a:focus{  
+  /* color: #FFCB05; */
+  border: 5px dashed #FFCB05;
+}
+/* END - Error Page */
+
+
+
+@media all and (min-width: 850px) {
+
+/* Navigation Section */
+.nav_container{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);  
+    justify-items: right;  
+    align-items: center;
+
+    padding-left: 5px;
+}
+
+.nav_container ul{
+  grid-column: 1 / -2;
+  grid-row: 1 / 1;
+
+  margin-right: 0;
+}
+
+nav .last_option{
+  padding-right: 10px;
+}
+
+nav .header_logo{
+  /* Change it from none to inline to make it appear */
+  display: inline; 
+
+  grid-column: 2 / 2;
+  grid-row: 1 / 1;
+  justify-self: left;
+}
+
+nav .header_logo img{
+  height: 48px;
+  width: auto;
+}
+/* END - Navigation Section */
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);  
+    row-gap: 100px;
+}
+
+.intro, .why, .start, .resource, .text_and_image {
+  grid-column: 2 / -2;
+  border-bottom: 1px solid #00274C;
+  padding-bottom: 100px;
+}
+
+.header .header_logo {
+  display: none;
+}
+
+
+/* Restyle All Text */
+h1 {
+  font-size: 80px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+h2{
+  font-size: 46px;
+  text-align: left;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+p{
+  font-size: 22px;
+  line-height: 30px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+body{
+  font-size: 22px;
+  line-height: 30px;
+}
+/* END - All Text */
+
+
+/* Restyle the Resource Section */
+.resource{
+  /* Clear the border from mobile view */
+  border: none;
+
+  border-bottom: 1px solid #00274C;
+  background-color: white;
+  justify-items: start;
+  padding-left: 0;
+}
+
+.resource-text-block {
+  padding: 0;
+}
+
+.resource li{
+  margin-left: 15px;
+}
+
+.resource ul{
+  margin-right: 0;
+}
+/* END - Resource Section */
+
+
+ol{
+  padding-right: 0;
+}
+
+.text-center{
+  text-align: left;
+}
+
+
+/* Make Images and Videos */
+.text_and_image img, .intro img, iframe{
+    max-height: 500px;
+    height: 500px;
+    width: 100%;
+
+    border-radius: 10px; 
+}
+
+.last_section{
+  border: none;
+  padding-bottom: 50px;
+}
+
+
+/* Footer */
+.footer_container {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-gap: 5px;
+    align-items: center;
+
+}
+
+.footer_container img{
+  grid-column: 2 / span 2;
+  grid-row: 1 / span 2;
+  justify-self: start;
+  
+  width: 100%;
+  height: auto;
+
+  margin-bottom: 50px;
+  padding-bottom: 0;
+}
+
+footer .first_line{
+  grid-column: 5 / -2;
+  grid-row: 1 / 1;
+  justify-self: start;
+  
+  font-size: 110%;
+  font-weight: bold;
+  text-align: left;
+  line-height: 130%;
+  margin-top: 10px;
+  padding-left: 25px;
+}
+
+footer .address{
+  grid-column: 5 / -2;
+  grid-row: 2 / 2;
+  justify-self: start;
+
+  text-align: left;
+  line-height: 130%;
+  padding-bottom: 0;
+  padding-left: 25px;
+  margin-bottom: 50px;
+}
+
+footer .copyright{
+  width: 76%;
+}
+/* END - Footer */
+
+
+/* Error Page */
+.error{
+ grid-column: 2 / -2;
+}
+
 }
